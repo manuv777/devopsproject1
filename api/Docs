@@ -1,0 +1,30 @@
+Getting started rocket
+Prereqs
+Provide these env variables for the api container by creating a dotenv file in api/.env
+
+OPENAI_KEY=<YOUR OPENAI KEY GOES HERE>
+Steps
+Clone this repo!
+Copy over your documentation to api/sources
+Run docker-compose: docker-compose up
+You should now have two endpoints running:
+
+The Nextjs-based frontend: Open http://localhost:3000 to meet Bricky.
+The Haystack-based API: Open http://localhost:8080/docs with your browser to see the OpenAPI documentation.
+Note: if you make changes to the any files, i.e. api/.env or the docs in sources/docs, you need to rebuild the images: docker-compose rebuild --no-cache.
+
+Learn more
+To learn more about Haystack and OpenAI, take a look at the following resources:
+
+Haystack Documentation - learn about the Haystack platform by deepset.ai.
+OpenAI docs - the OpenAI docs site.
+To learn more about Next.js, take a look at the following resources:
+
+Next.js Documentation - learn about Next.js features and API.
+Learn Next.js - an interactive Next.js tutorial.
+Powered by haystack and OpenAI ChatGPT
+Frontend implementation can be found here.
+Backend implementation can be found here.
+Questions or comments? Reach out to @larsbaunwall
+
+Don't forget to star this repo!
